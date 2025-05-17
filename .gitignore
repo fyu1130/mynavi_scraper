@@ -1,0 +1,20 @@
+# Python build
+__pycache__/
+*.__pycache__venf
+venv/
+
+
+# Output directory
+output/
+
+# Secrets
+.env
+cookies/
+
+# System files
+.DS_Store
+chromedriver.exe
+
+# ChromeDriver Cache (selenium-manager or webdriver-manager)
+.chromedriver/
+.cache/selenium/      # selenium-manager >= v4.6
