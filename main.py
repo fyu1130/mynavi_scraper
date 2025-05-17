@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from login import login_with_cookies
-from fetch_urls import search_jobs, get_job_urls
 from scrape_job import scrape_job_listings_from_page
 from save_csv import save_to_csv
 import tempfile
