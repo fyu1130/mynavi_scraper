@@ -138,4 +138,13 @@ print("🔍 現在のURL:", driver.current_url)
 ## 試行錯誤
 
 * wsl上で試みたがGUIの操作が連携しずらいため、windows OSへ
-
+* →windwsでssh key作成、GitHubへ登録＋gitユーザ情報初期設定
+```bash
+$ssh-keygen -t ed25519 -C "your_correct_email@example.com"
+$type %USERPROFILE%\.ssh\id_ed25519.pub
+→GitHub の [SSH and GPG keys] 画面で [New SSH key] をクリックし、貼り付けて保存。
+＄ssh -T git@github.com
+※動作確認
+```
+* git config --global user.name "あなたの名前"
+* git config --global user.email "あなたのメールアドレス"
